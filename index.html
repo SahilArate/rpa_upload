@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        .upload-box {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            width: 50%;
+            margin: 0 auto;
+            background: #f9f9f9;
+        }
+        .upload-box:hover {
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Your Document</h1>
+    <div class="upload-box">
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="document" id="document" required>
+            <br><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
